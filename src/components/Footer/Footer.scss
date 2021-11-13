@@ -1,0 +1,265 @@
+.footer {
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid var(--N75, #e5e7e9);
+  font-size: 13px;
+
+  &_container {
+    padding: 32px 0px;
+    width: 100%;
+    box-shadow: 0 1px 6px 0 var(--color-shadow, rgba(49, 53, 59, 0.12));
+  }
+
+  &_ft4 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-basis: 232px;
+    padding: 0px 40px 24px;
+    margin-top: -16px;
+  }
+
+  &_heading {
+    display: block;
+    position: relative;
+    font-weight: 800;
+    font-family: "Nunito Sans", -apple-system, sans-serif;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: var(--color-text-high, rgba(49, 53, 59, 0.96));
+    text-decoration: initial;
+    margin: 0px 0px 8px;
+  }
+
+  &_ft1 {
+    display: block;
+    padding: 0px;
+    margin: 0px 0px 24px;
+    min-width: 200px;
+    list-style: none;
+  }
+
+  &_ft2 {
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__up {
+      display: block;
+      padding: 0px;
+      margin: 0px 0px 24px;
+      min-width: 200px;
+      list-style: none;
+    }
+
+    &__down {
+      display: block;
+      padding: 0px;
+      margin: 0px 0px 24px;
+      min-width: 200px;
+      list-style: none;
+    }
+  }
+
+  &_ft3 {
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__up {
+      display: block;
+      padding: 0px;
+      margin: 0px 0px 24px;
+      min-width: 200px;
+      list-style: none;
+    }
+
+    &__down {
+      display: block;
+      padding: 0px;
+      margin: 0px 0px 24px;
+      min-width: 200px;
+      list-style: none;
+    }
+  }
+
+  &_all {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0px auto;
+    padding: 32px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+
+li {
+  display: block;
+  margin-bottom: 8px;
+}
+
+li span {
+  display: block;
+  color: var(--color-text-low, rgba(49, 53, 59, 0.68));
+  //   font-weight: 600;
+  font-size: 13px !important;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.ft4 {
+  &_1 {
+    width: 310px;
+    height: 120px;
+    margin-top: -16px;
+  }
+
+  &_2 {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+  }
+
+  &_3 {
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--color-text-low, rgba(49, 53, 59, 0.68));
+  }
+
+  &_4 {
+    display: inline-block;
+    position: relative;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--color-searchbar, #f3f4f5);
+    overflow: hidden;
+  }
+
+  &_txt {
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 18px;
+  }
+
+  &_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://ecs7.tokopedia.net/assets-unify/img/il-footer-2.jpg);
+    background-position: center top;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_img1 {
+    background-image: url(https://ecs7.tokopedia.net/assets-unify/img/ic-download-android.svg);
+    width: 135px;
+    cursor: pointer;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--N50, #f3f4f5);
+    display: unset;
+  }
+
+  &_img2 {
+    background-image: url(https://ecs7.tokopedia.net/assets-unify/img/ic-download-ios.svg);
+    width: 125px;
+    cursor: pointer;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--N50, #f3f4f5);
+    display: unset;
+  }
+}
+
+.ft3 {
+  &_1 {
+    display: inline-block;
+    color: var(--color-text-low, rgba(49, 53, 59, 0.68));
+    /* font-size: 1rem; */
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+  }
+
+  &_pci {
+    display: inline-block;
+    width: 100px;
+    height: 58px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://images.tokopedia.net/img/unify/icon_pci_license.webp);
+  }
+
+  &_bsi {
+    display: inline-block;
+    width: 100px;
+    height: 58px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://images.tokopedia.net/img/unify/icon_bsi_license.webp);
+  }
+
+  &_follow {
+    line-height: 1px;
+  }
+}
+
+.img_follow {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@media (min-width: 1200px) {
+  .ft4_1 {
+    width: 550px;
+    height: 211px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer_all {
+    width: 1190px;
+  }
+}
+
+.btn {
+  &_ind {
+    position: relative;
+    padding: 4px 16px;
+    background-color: var(--G500, #03ac0e);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 18px;
+    outline: none;
+    text-align: center;
+    transition: color 0.1s ease-in-out 0.1s, background-color 0.1s ease-out 0.3s;
+    z-index: 2;
+  }
+
+  &_eng {
+    position: relative;
+    padding: 4px 16px;
+    background-color: transparent;
+    border-radius: 6 px;
+    border: none;
+    color: var(--color-text-placeholder, rgba(49, 53, 59, 0.44));
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 18px;
+    outline: none;
+    text-align: center;
+    transition: color 0.1s ease-in-out 0.1s, background-color 0.1s ease-out 0s;
+    z-index: 2;
+  }
+}

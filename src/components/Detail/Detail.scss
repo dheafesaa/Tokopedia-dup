@@ -1,0 +1,179 @@
+.detail {
+  max-width: 1188px;
+  min-width: 1188px;
+  margin: auto;
+  padding: 19px 0px 0px;
+
+  &_img {
+    opacity: 1;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  &_wrapper {
+    display: grid;
+    grid-template-columns:
+      minmax(0px, 348px)
+      minmax(0px, 468px)
+      minmax(0px, 268px);
+    column-gap: 52px;
+
+    &__ticker {
+      margin: 0px;
+    }
+
+    &__options {
+      margin: 0px;
+    }
+
+    &__product {
+      margin: 0px;
+
+      &-1 {
+        margin-bottom: 6px;
+      }
+
+      &-2 {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      &-dot {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &-rating {
+        font-size: 0.87rem;
+        line-height: 20px;
+      }
+
+      &-items {
+        display: flex;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+      }
+
+      &-sold {
+        font-size: 0.87rem;
+        line-height: 20px;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &-star {
+        font-size: 0.87rem;
+        line-height: 20px;
+        margin-right: 5px;
+      }
+
+      &-name {
+        margin: 0px 0px 4px;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 24px;
+        color: var(--N700, rgba(49, 53, 59, 0.96));
+        font-family: "Nunito Sans", "Open Sans", sans-serif;
+      }
+    }
+
+    &__images {
+      //   grid-area: product_media / product_media / product_media / product_media;
+      margin: 0px;
+    }
+
+    &__container {
+      top: 178px;
+      position: sticky;
+
+      &-up {
+        overflow: hidden;
+        border-radius: 8px;
+        width: 100%;
+        height: 348px;
+      }
+
+      &-down {
+        position: relative;
+        margin-top: 8px;
+      }
+
+      &-down1 {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-down2 {
+        position: relative;
+        transition: transform 500ms ease 0s;
+        transform: translate3d(0px, 0px, 0px);
+        display: flex;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+        min-width: 1000vw;
+      }
+
+      &-down3 {
+        border-color: var(--G400, #4fd15a);
+        width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        margin-right: 7px;
+        overflow: hidden;
+        cursor: pointer;
+        border-width: 2px;
+        border-style: solid;
+        border-image: initial;
+        transition: border-color 0.25s ease 0s;
+        position: relative;
+      }
+
+      &-down4 {
+        height: 100%;
+        background-size: 99% 100%;
+        display: inline-block;
+        margin: 0px auto;
+        text-align: center;
+      }
+
+      &-up1 {
+        cursor: crosshair;
+        position: relative !important;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+      }
+
+      &-up2 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        animation: 0.5s ease-in-out 0s 1 normal none running animation-12ap7ro;
+        position: relative !important;
+        background-size: 99% 100%;
+        display: inline-block;
+        margin: 0px auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.star {
+  &_img {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
+}
