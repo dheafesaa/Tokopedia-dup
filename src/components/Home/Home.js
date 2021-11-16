@@ -1,4 +1,4 @@
-import Detail from "components/Detail/Detail";
+// import Detail from "components/Detail/Detail";
 import Official from "components/Official/Official";
 import Trending from "components/Trending/Trending";
 import React from "react";

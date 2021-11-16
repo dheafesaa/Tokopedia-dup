@@ -3,7 +3,16 @@ import official from "../../images/official.png";
 import card1 from "../../images/card1.jpg";
 import "./Official.scss";
 
+import { useDispatch } from "react-redux";
+
+import { addToCart } from "store/actions/cart";
 const Official = () => {
+  const dispatch = useDispatch();
+
+  function fnAddToCart(item) {
+    dispatch(addToCart(item));
+  }
+
   return (
     <section className="official">
       <div className="official_container">
@@ -70,23 +79,47 @@ const Official = () => {
                                         CantikFest
                                       </div>
                                       <div className="official_data__detail-4">
-                                          BREYLEE Step 1 Blackhead Remover Mask - Pembersih Komedo (17ml) - Breylee Step 1
+                                        BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1
                                       </div>
-                                      <div className="official_data__detail-5">Rp 50.000</div>
+                                      <div className="official_data__detail-5">
+                                        Rp 50.000
+                                      </div>
                                       <div className="official_data__detail-6">
-                                          <div className="official_data__detail-loc">
-                                              <div className="official_data__detail-img"></div>
-                                              <div className="official_data__detail-name">
-                                                  <span className="official_data__detail-wil">Jakarta Pusat</span>
-                                                  <span className="official_data__detail-btm"></span>
-                                              </div>
+                                        <div className="official_data__detail-loc">
+                                          <div className="official_data__detail-img"></div>
+                                          <div className="official_data__detail-name">
+                                            <span className="official_data__detail-wil">
+                                              Jakarta Pusat
+                                            </span>
+                                            <span className="official_data__detail-btm"></span>
                                           </div>
-                                          <div className="official_data__detail-star">
-                                              <div className="official_data__detail-lg"></div>
-                                              <span className="official_data__detail-score">4.9</span>
-                                              <span className="official_data__detail-line"></span>
-                                              <span className="official_data__detail-sold">Terjual 2,7 rb</span>
-                                          </div>
+                                        </div>
+                                        <div className="official_data__detail-star">
+                                          <div className="official_data__detail-lg"></div>
+                                          <span className="official_data__detail-score">
+                                            4.9
+                                          </span>
+                                          <span className="official_data__detail-line"></span>
+                                          <span className="official_data__detail-sold">
+                                            Terjual 2,7 rb
+                                          </span>
+                                          <button
+                                            onClick={() =>
+                                              fnAddToCart({
+                                                id: "cantikfest1",
+                                                name: `BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1`,
+                                                price: 50000,
+                                                location: "Jakarta Pusat",
+                                                rate: 4.9,
+                                                sold: "Terjual 2,7 rb",
+                                              })
+                                            }
+                                          >
+                                            Add to Cart
+                                          </button>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -126,23 +159,47 @@ const Official = () => {
                                         CantikFest
                                       </div>
                                       <div className="official_data__detail-4">
-                                          BREYLEE Step 1 Blackhead Remover Mask - Pembersih Komedo (17ml) - Breylee Step 1
+                                        BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1
                                       </div>
-                                      <div className="official_data__detail-5">Rp 50.000</div>
+                                      <div className="official_data__detail-5">
+                                        Rp 50.000
+                                      </div>
                                       <div className="official_data__detail-6">
-                                          <div className="official_data__detail-loc">
-                                              <div className="official_data__detail-img"></div>
-                                              <div className="official_data__detail-name">
-                                                  <span className="official_data__detail-wil">Jakarta Pusat</span>
-                                                  <span className="official_data__detail-btm"></span>
-                                              </div>
+                                        <div className="official_data__detail-loc">
+                                          <div className="official_data__detail-img"></div>
+                                          <div className="official_data__detail-name">
+                                            <span className="official_data__detail-wil">
+                                              Jakarta Pusat
+                                            </span>
+                                            <span className="official_data__detail-btm"></span>
                                           </div>
-                                          <div className="official_data__detail-star">
-                                              <div className="official_data__detail-lg"></div>
-                                              <span className="official_data__detail-score">4.9</span>
-                                              <span className="official_data__detail-line"></span>
-                                              <span className="official_data__detail-sold">Terjual 2,7 rb</span>
-                                          </div>
+                                        </div>
+                                        <div className="official_data__detail-star">
+                                          <div className="official_data__detail-lg"></div>
+                                          <span className="official_data__detail-score">
+                                            4.9
+                                          </span>
+                                          <span className="official_data__detail-line"></span>
+                                          <span className="official_data__detail-sold">
+                                            Terjual 2,7 rb
+                                          </span>
+                                          <button
+                                            onClick={() =>
+                                              fnAddToCart({
+                                                id: "cantikfest2",
+                                                name: `BREYLEE Step 2 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 2`,
+                                                price: 50000,
+                                                location: "Jakarta Pusat",
+                                                rate: 4.9,
+                                                sold: "Terjual 2,7 rb",
+                                              })
+                                            }
+                                          >
+                                            Add to Cart
+                                          </button>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -182,23 +239,32 @@ const Official = () => {
                                         CantikFest
                                       </div>
                                       <div className="official_data__detail-4">
-                                          BREYLEE Step 1 Blackhead Remover Mask - Pembersih Komedo (17ml) - Breylee Step 1
+                                        BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1
                                       </div>
-                                      <div className="official_data__detail-5">Rp 50.000</div>
+                                      <div className="official_data__detail-5">
+                                        Rp 50.000
+                                      </div>
                                       <div className="official_data__detail-6">
-                                          <div className="official_data__detail-loc">
-                                              <div className="official_data__detail-img"></div>
-                                              <div className="official_data__detail-name">
-                                                  <span className="official_data__detail-wil">Jakarta Pusat</span>
-                                                  <span className="official_data__detail-btm"></span>
-                                              </div>
+                                        <div className="official_data__detail-loc">
+                                          <div className="official_data__detail-img"></div>
+                                          <div className="official_data__detail-name">
+                                            <span className="official_data__detail-wil">
+                                              Jakarta Pusat
+                                            </span>
+                                            <span className="official_data__detail-btm"></span>
                                           </div>
-                                          <div className="official_data__detail-star">
-                                              <div className="official_data__detail-lg"></div>
-                                              <span className="official_data__detail-score">4.9</span>
-                                              <span className="official_data__detail-line"></span>
-                                              <span className="official_data__detail-sold">Terjual 2,7 rb</span>
-                                          </div>
+                                        </div>
+                                        <div className="official_data__detail-star">
+                                          <div className="official_data__detail-lg"></div>
+                                          <span className="official_data__detail-score">
+                                            4.9
+                                          </span>
+                                          <span className="official_data__detail-line"></span>
+                                          <span className="official_data__detail-sold">
+                                            Terjual 2,7 rb
+                                          </span>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -238,23 +304,32 @@ const Official = () => {
                                         CantikFest
                                       </div>
                                       <div className="official_data__detail-4">
-                                          BREYLEE Step 1 Blackhead Remover Mask - Pembersih Komedo (17ml) - Breylee Step 1
+                                        BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1
                                       </div>
-                                      <div className="official_data__detail-5">Rp 50.000</div>
+                                      <div className="official_data__detail-5">
+                                        Rp 50.000
+                                      </div>
                                       <div className="official_data__detail-6">
-                                          <div className="official_data__detail-loc">
-                                              <div className="official_data__detail-img"></div>
-                                              <div className="official_data__detail-name">
-                                                  <span className="official_data__detail-wil">Jakarta Pusat</span>
-                                                  <span className="official_data__detail-btm"></span>
-                                              </div>
+                                        <div className="official_data__detail-loc">
+                                          <div className="official_data__detail-img"></div>
+                                          <div className="official_data__detail-name">
+                                            <span className="official_data__detail-wil">
+                                              Jakarta Pusat
+                                            </span>
+                                            <span className="official_data__detail-btm"></span>
                                           </div>
-                                          <div className="official_data__detail-star">
-                                              <div className="official_data__detail-lg"></div>
-                                              <span className="official_data__detail-score">4.9</span>
-                                              <span className="official_data__detail-line"></span>
-                                              <span className="official_data__detail-sold">Terjual 2,7 rb</span>
-                                          </div>
+                                        </div>
+                                        <div className="official_data__detail-star">
+                                          <div className="official_data__detail-lg"></div>
+                                          <span className="official_data__detail-score">
+                                            4.9
+                                          </span>
+                                          <span className="official_data__detail-line"></span>
+                                          <span className="official_data__detail-sold">
+                                            Terjual 2,7 rb
+                                          </span>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -294,23 +369,32 @@ const Official = () => {
                                         CantikFest
                                       </div>
                                       <div className="official_data__detail-4">
-                                          BREYLEE Step 1 Blackhead Remover Mask - Pembersih Komedo (17ml) - Breylee Step 1
+                                        BREYLEE Step 1 Blackhead Remover Mask -
+                                        Pembersih Komedo (17ml) - Breylee Step 1
                                       </div>
-                                      <div className="official_data__detail-5">Rp 50.000</div>
+                                      <div className="official_data__detail-5">
+                                        Rp 50.000
+                                      </div>
                                       <div className="official_data__detail-6">
-                                          <div className="official_data__detail-loc">
-                                              <div className="official_data__detail-img"></div>
-                                              <div className="official_data__detail-name">
-                                                  <span className="official_data__detail-wil">Jakarta Pusat</span>
-                                                  <span className="official_data__detail-btm"></span>
-                                              </div>
+                                        <div className="official_data__detail-loc">
+                                          <div className="official_data__detail-img"></div>
+                                          <div className="official_data__detail-name">
+                                            <span className="official_data__detail-wil">
+                                              Jakarta Pusat
+                                            </span>
+                                            <span className="official_data__detail-btm"></span>
                                           </div>
-                                          <div className="official_data__detail-star">
-                                              <div className="official_data__detail-lg"></div>
-                                              <span className="official_data__detail-score">4.9</span>
-                                              <span className="official_data__detail-line"></span>
-                                              <span className="official_data__detail-sold">Terjual 2,7 rb</span>
-                                          </div>
+                                        </div>
+                                        <div className="official_data__detail-star">
+                                          <div className="official_data__detail-lg"></div>
+                                          <span className="official_data__detail-score">
+                                            4.9
+                                          </span>
+                                          <span className="official_data__detail-line"></span>
+                                          <span className="official_data__detail-sold">
+                                            Terjual 2,7 rb
+                                          </span>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>

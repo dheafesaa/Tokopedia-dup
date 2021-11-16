@@ -7,9 +7,20 @@ import location from "../../images/location.png";
 import down from "../../images/down.png";
 import "./Header.scss";
 
+import { useSelector, useDispatch } from "react-redux";
+
+import { removeFromCart } from "store/actions/cart";
 const Header = () => {
+  const reducerCart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const cartList = Object.keys(reducerCart.data);
+
+  function fnDeleteCart(id) {
+    dispatch(removeFromCart(id));
+  }
+
   return (
-    <div className="header" style={{marginTop: 110, padding: 1}}>
+    <div className="header" style={{ marginTop: 110, padding: 1 }}>
       <div className="site-header">
         <div className="site-header__top">
           <div className="menu_right">
@@ -68,6 +79,19 @@ const Header = () => {
           <div className="sub-3">
             <div className="cart">
               <img src={cart} alt="Cart" width={20} height={20} />
+              <div className="bubble">{cartList.length}</div>
+              <div className="submenu">
+                {cartList.map((id) => {
+                  const item = reducerCart.data[id];
+
+                  return (
+                    <div key={id}>
+                      <h6>{item.name}</h6>
+                      <button onClick={() => fnDeleteCart(id)}>delete</button>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
